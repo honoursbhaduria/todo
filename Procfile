@@ -1,2 +1,6 @@
-web: python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn todo.wsgi
-                                            
+pip install -r requirements.txt
+python manage.py collectstatic --noinput
+python manage.py migrate --noinput
+
+
+                                       
