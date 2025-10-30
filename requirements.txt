@@ -1,1 +1,4 @@
-blinker==1.5
+Django
+gunicorn
+whitenoise
+psycopg2-binary
