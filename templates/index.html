@@ -36,6 +36,7 @@ Home
 
 <div class="container">
     <h1>Here are all the tasks that you have created:-</h1>
+    {% if tasks and tasks.count %}
     <table class="table">
         <thead>
             <tr>
@@ -62,6 +63,11 @@ Home
             {% endfor %}
         </tbody>
     </table>
+    {% else %}
+    <div class="alert alert-info" role="alert">
+        No tasks found. Create one using the form above.
+    </div>
+    {% endif %}
 </div>
 <hr>
 <br>
